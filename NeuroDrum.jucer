@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="pssqUI" name="NeuroDrum" projectType="consoleapp" jucerVersion="5.4.7">
+  <MAINGROUP id="EivwVQ" name="NeuroDrum">
+    <GROUP id="{67B1D9AA-E760-AF26-0225-CB310CC879B8}" name="Source">
+      <FILE id="Q5BCWE" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="UwsfUs" name="cxxopts.hpp" compile="0" resource="0" file="Source/cxxopts.hpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" externalLibraries="clog&#10;gmock&#10;gtest&#10;nsync_cpp&#10;onnx_proto&#10;onnx_test_data_proto&#10;onnx_test_runner_common&#10;onnxruntime_common&#10;onnx&#10;onnxruntime_flatbuffers&#10;onnxruntime_framework&#10;onnxruntime_graph&#10;onnxruntime_mlas&#10;onnxruntime_mocked_allocator&#10;onnxruntime_optimizer&#10;onnxruntime_providers&#10;onnxruntime_session&#10;onnxruntime_test_utils&#10;onnxruntime_util&#10;protobuf&#10;re2&#10;cpuinfo">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="../../include/onnxruntime/core/session&#10;../../include/onnxruntime/core/common&#10;../../include/onnxruntime/core/eager&#10;../../include/onnxruntime/core/framework&#10;../../include/onnxruntime/core/graph&#10;../../include/onnxruntime/core/optimizer&#10;../../include/onnxruntime/core/platform&#10;../../include/onnxruntime/core/providers"
+                       libraryPath="../../lib"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="../../include/onnxruntime/core/session&#10;../../include/onnxruntime/core/common&#10;../../include/onnxruntime/core/eager&#10;../../include/onnxruntime/core/framework&#10;../../include/onnxruntime/core/graph&#10;../../include/onnxruntime/core/optimizer&#10;../../include/onnxruntime/core/platform&#10;../../include/onnxruntime/core/providers"
+                       libraryPath="../../lib"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../SDKs_and_Libraries/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
