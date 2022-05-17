@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="pssqUI" name="NeuroDrum" projectType="consoleapp" jucerVersion="5.4.7">
-  <MAINGROUP id="EivwVQ" name="NeuroDrum">
+<JUCERPROJECT id="pssqUI" name="neurodrum-cli" projectType="consoleapp" jucerFormatVersion="1"
+              companyName="AndrewFyfe" companyWebsite="https://uk.linkedin.com/in/andrewfyfe93">
+  <MAINGROUP id="EivwVQ" name="neurodrum-cli">
     <GROUP id="{67B1D9AA-E760-AF26-0225-CB310CC879B8}" name="Source">
       <FILE id="Q5BCWE" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="UwsfUs" name="cxxopts.hpp" compile="0" resource="0" file="Source/cxxopts.hpp"/>

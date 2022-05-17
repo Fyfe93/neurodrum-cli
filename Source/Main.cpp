@@ -18,7 +18,7 @@ int main (int argc, char* argv[])
 {
     //DBG(ORT_API_VERSION);
     
-    cxxopts::Options options("neurodrum", "generate percussion samples using neural networks");
+    cxxopts::Options options("neurodrum-cli", "generate percussion samples using neural networks");
     options.add_options()
     ("m,model_file", "Model file path", cxxopts::value<std::string>()->default_value("log_kicks_full.onnx"))
     ("a,attack", "Envelope attack value 0 -> 1", cxxopts::value<float>()->default_value("0.1"))
@@ -160,11 +160,11 @@ int main (int argc, char* argv[])
 
     /* render result to wav file */
     File outputFile(outputdir.getFullPathName() + "/neurodrum_sample.wav");
-    FileOutputStream* outputTo;
+    std::unique_ptr<FileOutputStream> outputTo;
     outputTo = outputFile.createOutputStream();
     const double fs = 16000.0;
     AudioFormatWriter* writer;
-    writer = audioFormat->createWriterFor(outputTo, fs, 2, 16, NULL, 0);
+    writer = audioFormat->createWriterFor(outputTo.get(), fs, 2, 16, NULL, 0);
     writer->writeFromAudioSampleBuffer(outputWav, 0, outputWav.getNumSamples());
     writer->~AudioFormatWriter();
 
