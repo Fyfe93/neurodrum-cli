@@ -4,17 +4,17 @@ Command-line application using Onnx runtime and Onnx models from the NeuroDrum p
 Generate percussion using NeuroDrum generative models and render them to WAV files.
 
 ## Instructions
-Requires the Juce library as this is a Juce project and uses the Projucer for building. Clone from [here](https://github.com/juce-framework/JUCE)
+1. Requires the Juce library as this is a Juce project and uses the Projucer for building. Clone from [here](https://github.com/juce-framework/JUCE)
 
-Clone Onnx runtime and build following the instructions in the Onnyx Documentation [here](https://onnxruntime.ai/docs/how-to/build/inferencing.html)
+2. Clone Onnx runtime and build following the instructions in the Onnyx Documentation [here](https://onnxruntime.ai/docs/how-to/build/inferencing.html)
 
-create "include" and "lib" directories in neurodrum-cli project root folder
+3. create "include" and "lib" directories in neurodrum-cli project root folder
 
-For now you must copy header files and corresponding .a library files over to the previously created 'include' and 'lib' directories. To check you have placed the library files and includes in the correct locations open the Projucer file 'neurodrum-cli.jucer' and check against the linked library/include locations.
+4. For now you must copy header files and corresponding .a library files over to the previously created 'include' and 'lib' directories. To check you have placed the library files and includes in the correct locations open the Projucer file 'neurodrum-cli.jucer' and check against the linked library/include locations.
 
-Launch the Xcode project from the Projucer and build.
+5. Launch the Xcode project from the Projucer and build.
 
-The compiled executable will be found in the 'Builds' folder.
+6. The compiled executable will be found in the 'Builds' folder.
 
 ## Acknowledgements
 
